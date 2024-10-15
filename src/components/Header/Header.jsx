@@ -1,5 +1,5 @@
 import {
-    NavLink, Link
+ Link
 } from "react-router-dom";
 import { useEffect,  useRef, useState } from "react";
 import { motion } from "framer-motion";
@@ -24,6 +24,9 @@ function Header(){
 
     const active_link = useRef(true)
 
+    const [current_page, set_current_page] = useState("")
+    const page_track = useRef("")
+    page_track.current = window.location.pathname;
 
     function toggle_nav(){
         console.log("toggle_nav called");
@@ -36,19 +39,17 @@ function Header(){
         if (value.name !== "Home"){
             return(
            
-                <NavLink
+                <Link
                     key={value.name} 
                     to={value.path}
-                >  {({ isActive }) => (
-                    <button className={
-                        "nav_btn " + 
-                        (isActive ? "btn_active " : " ")
-                        
-                    }>
-                     {value.name}
+                >
+                    <button className={"nav_btn " + (current_page === value.path && "current_btn")}
+                        onClick={()=>{set_current_page(value.path)}}
+                    >
+                        {value.name}
                     </button> 
-                  )} 
-                </NavLink>  
+               
+                </Link>  
         )}
     }
     
@@ -94,28 +95,26 @@ function Header(){
         console.log("the active_link is: ", active_link.current);
         if (value.name !== "Home"){
             return(
-                <NavLink
+                <Link
                     key={value.name} 
                     to={value.path}
-                >  {({ isActive }) => (
+                > 
                     <motion.button 
                         variants={links_variants}    
                         custom={index}
-                        className={
-                            "nav_btn " +
-                            (isActive ? "btn_active " : " ")
-                        }
+                        className={"nav_btn nav_btn_dd " + (current_page === value.path && "current_btn")}
                         onAnimationComplete={()=>{active_link.current = index === 3 && false }}
                         onClick={(e) => {
                             if (active_link.current) {
                                 e.preventDefault(); // Prevent click action
                             }
+                            set_current_page(value.path)
                         }}
                         >
                       {value.name} 
                     </motion.button> 
-                  )} 
-                </NavLink>  
+            
+                </Link>  
         )
     }
     } 
@@ -123,6 +122,7 @@ function Header(){
 
 
     useEffect(()=>{
+        set_current_page(page_track.current)
         window
         .matchMedia("(max-width: 450px)")
         .addEventListener('change', e => set_reform_nav(e.matches));
@@ -132,7 +132,10 @@ function Header(){
     return(
         <>
             <header className="header">
-                    <Link className="nav_logo"> 
+                    <Link 
+                        className="nav_logo"
+                        onClick={()=>{set_current_page("")}}
+                    > 
                         <img  src={logo} alt="logo image"></img>
                     </Link>
                     {!reform_nav &&
@@ -164,14 +167,9 @@ function Header(){
                        </div> 
                     }
                    
-               
-
-
-            </header>
-                
+            </header>       
         </>
     );
-
 }
 
 export default Header;
