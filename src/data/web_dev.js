@@ -323,7 +323,7 @@ export const web_dev_content = [
             While in the process of finishing my final semester at Medicine Hat College I needed a way to showcase my works, what better way than to use my web design & development skills.
             This was my last project in web design before I decided to persue Web development in a more full form, and now I am able to achieve much better results as well as incorperating backends.
         `,
-        link:"https://bladen777.github.io/portflio/",
+        link:"https://bladen777.github.io/portflio_mk1/",
 
     },
 
