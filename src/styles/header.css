@@ -15,6 +15,7 @@
 
 
 .nav_logo{
+    z-index:9999;
     grid-column: 1;
     grid-row:1;
     width: fit-content;
