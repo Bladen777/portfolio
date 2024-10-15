@@ -1,0 +1,17 @@
+
+
+.footer{
+    z-index: 5000;
+    height: 100px;
+    width: 100%;
+    background-color: var(--primary_accent);
+    position:relative;
+    bottom: 0px;
+    text-align: center;
+
+}
+
+.footer p {
+    padding: 2rem;
+    color: var(--secondary);
+}
