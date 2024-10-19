@@ -1,6 +1,6 @@
 import { motion, useAnimate } from "framer-motion"
 import PropTypes from "prop-types";
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 
 
 import {  Update_Content_Context } from "../Content_Popup/Content_Context";
@@ -12,6 +12,8 @@ import "../../styles/content_page.css"
 
 export default function Content_Page(props){
 
+
+    // passing information to context for detail page
     let content_props = {
         view: "",
         title: "", 
@@ -41,48 +43,50 @@ export default function Content_Page(props){
 
     const update_content =  Update_Content_Context();
 
+
+    // the main workings for the page 
     const projects_length = props.content.length -1;
 
     const [show_cert, set_show_cert] = useState(false)
     const [cert, set_cert] = useState("")
     const [scope, animate] = useAnimate()
-    const [view_counter, set_view_counter]=useState(0);
-    const [image_counter, set_image_counter]=useState(0);
+    const [view_counter, set_view_counter] = useState(0);
+    const view_counter_ref = useRef(0);
+    const [image_counter, set_image_counter] = useState(0);
 
-    
-    const timeout = useRef();
-    const running = useRef()
 
-    
-    const view_slide_show = useCallback(async() =>{
-        let current_project_num;
+    async function view_slide_show(){
 
-        view_counter === projects_length ? current_project_num = 0 : current_project_num = view_counter + 1;
+            view_counter === projects_length ? view_counter_ref.current = 0 : view_counter_ref.current = view_counter + 1;
+            const images_length = props.content[view_counter_ref.current].images.length - 1;
 
-        const images_length = props.content[current_project_num].images.length - 1;
+            let rand_image;
+            if(images_length > 0){
+                rand_image = Math.floor((Math.random() * images_length) + 1);
+            } else {
+                rand_image = 0;
+            }
 
-        let rand_image;
-        if(images_length > 0){
-            rand_image = Math.floor((Math.random() * images_length) + 1);
-        } else {
-            rand_image = 0;
-        }
+            scope.current && await animate(scope.current, {
+                opacity:[0,1]
+            }, {
+                duration:1, delay: 0.17
+            });
 
-        //console.log("current project: ", current_project_num);
-        //console.log("images length: ", images_length);
-        //console.log("view counter: ", view_counter)
-        //console.log("running.current: ", running.current)
-        //console.log("random image: ", rand_image);
-        
-        scope.current && await animate(".view_deck_image", {opacity:0}, {duration:0.5})
-        scope.current && animate(".view_deck_image", {opacity:1}, {duration:1, delay: 0.17})
-        
-        set_image_counter(rand_image);
-        set_view_counter(current_project_num);
+            scope.current && await animate(scope.current,{
+                opacity:[1,0]
+            }, {
+                duration:1, delay:2
+            });
 
-        running.current = false;
-        
-    },[animate, projects_length, props.content, view_counter, scope])
+            set_view_counter(view_counter_ref.current);
+            set_image_counter(rand_image);
+    }
+
+    useEffect(()=>{
+            view_slide_show()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[view_counter])
     
 
     function toggle_show_cert(new_cert){
@@ -98,15 +102,6 @@ export default function Content_Page(props){
         }
     }
 
-
-    useEffect(() => {
-        if (!running.current){ //prevent calling function before finishing previous cycle
-            timeout.current = setTimeout(view_slide_show, 2500);
-        }
-        running.current = true;
-        return () => clearTimeout(timeout); // Cleanup on unmount or re-run
-    }, [view_counter, image_counter, view_slide_show]); // Dependencies for re-triggering
-
     return(
         <>
             <motion.h1
@@ -119,12 +114,9 @@ export default function Content_Page(props){
             </motion.h1>
 
             <article className="view_deck">
-                <section className="view_deck_main" ref={scope}>
+                <section className="view_deck_main"  >
                     <motion.img
-                        initial={{ opacity: 0}} 
-                        animate={{ opacity: 1}} 
-                        transition={{ duration: 0.5 }}
-
+                        ref={scope}
                         className="view_deck_image"
                         src={props.content[view_counter].images[image_counter]} 
                         alt="image slide show"
