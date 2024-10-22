@@ -12,7 +12,7 @@ import page_trans from "../animation_variants/page_trans";
 export default function Web_Development(){
 
         const location = {
-            this_location: 3,
+            this_location: 1,
             target_location:(useLocation().pathname)
         };
     return(
