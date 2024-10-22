@@ -19,7 +19,7 @@
 #introduction{
     
     position: relative;
-    width: fit-content;
+    width: calc(100vw - 2rem);
     margin: auto;
     z-index: 1000;
 }
