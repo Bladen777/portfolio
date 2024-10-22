@@ -109,15 +109,18 @@
 }
 
 
-.skill_history{
-    width: 100%;
-    
-}
 
 
 .skill_education{
     width: 50%;
 
+}
+
+@media  screen and (max-width: 600px) {
+    .skill_info{
+        flex-direction: column;
+    }
+    
 }
 
 
@@ -141,6 +144,7 @@
 .hide_cert{
     max-height: 0px;
 }
+
 
 
 
