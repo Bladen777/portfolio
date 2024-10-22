@@ -44,6 +44,16 @@ import p3_img_4 from "../assets/project_images/digital/graphic_design/recruit_po
 //project 4
 import p4_img_1 from "../assets/project_images/digital/graphic_design/pythonic/img_1.jpg"
 
+//project 5
+import p5_img_1 from "../assets/project_images/digital/graphic_design/oddball/img_1.jpg";
+import p5_img_2 from "../assets/project_images/digital/graphic_design/oddball/img_2.jpg";
+import p5_img_3 from "../assets/project_images/digital/graphic_design/oddball/img_3.jpg";
+import p5_img_4 from "../assets/project_images/digital/graphic_design/oddball/img_4.jpg";
+import p5_img_5 from "../assets/project_images/digital/graphic_design/oddball/img_5.jpg";
+import p5_img_6 from "../assets/project_images/digital/graphic_design/oddball/img_6.jpg";
+
+
+
 export const graphic_design_content = [
     {
         id: 1,
@@ -98,9 +108,26 @@ export const graphic_design_content = [
         `,
         link:""
 
+    },
+    {
+        id: 5,
+        title:"Odball Sculptural",
+        images:[p5_img_1,p5_img_2,p5_img_3,p5_img_4,p5_img_5,p5_img_6],
+        date:"2020",      
+        description:`
+        This project incorperated coming up with a brand identity and develope a logo to encapsulate the identity of the brand.
+
+        I chose to develope a brand revolving around custom 3D & Sculptural works, "Oddball" was what I came up with a brand that would create and build things that were outside modern design.
+
+        I wanted the logo to mainly incorperate the loose illustration of a smiling robotic face that would be the standalone maskot for simpler marketing or used in  a variety of different ways.
+        
+
+        `,
+        link:""
+
     },  
+  
 
 
 ];
-
 
