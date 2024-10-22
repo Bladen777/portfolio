@@ -41,6 +41,9 @@ import p3_img_2 from "../assets/project_images/digital/graphic_design/recruit_po
 import p3_img_3 from "../assets/project_images/digital/graphic_design/recruit_poster/img3.jpg";
 import p3_img_4 from "../assets/project_images/digital/graphic_design/recruit_poster/img4.jpg";
 
+//project 4
+import p4_img_1 from "../assets/project_images/digital/graphic_design/pythonic/img_1.jpg"
+
 export const graphic_design_content = [
     {
         id: 1,
@@ -80,8 +83,24 @@ export const graphic_design_content = [
         `,
         link:""
 
-    }, 
+    },
+    {
+        id: 4,
+        title:"Pythonic Logo",
+        images:[p4_img_1],
+        date:"2022",      
+        description:`
+        For the up and coming metal band "Pythonic" I was contacted to redesign their logo. They wanted to take inspiration from the timeless logo of the band "Pantera" which incorperates a heavy and bold typeface that is clearly legible, as well as symmetry.
+        
+        With these elements in mind I got to work, I also wanted to incorperate elements of the Python snake as Pythonic means "of, realting to, or resembling a python". I chose to create all the letters incorperating edges to symbolize the bite of the snake.
+        
+        The "C" inparticular representing the jaw of the snake about to bite, and the "O" loosly representing the eye of the snake. All letters were also designed usuing the golden ratio to create a visually appealing design.
+        `,
+        link:""
+
+    },  
 
 
 ];
+
 
