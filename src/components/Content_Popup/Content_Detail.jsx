@@ -32,13 +32,16 @@ export default function Content_Detail(){
         } else if (way === "forw"){
             counter === imgs_length ? set_counter(0) : set_counter(counter + 1);
         };
+    }
+
+
+    function initial_animate(){
         animate(scope.current,{
             opacity:[0,1]
         },{
             duration:0.3
         })
     }
-
 
 
     
@@ -68,7 +71,7 @@ export default function Content_Detail(){
                     {context.images.length > 1 &&
                         <button id="carousel_btn_left" className="carousel_btn material-symbols-outlined" onClick={()=>{handle_click("back")}}>arrow_back_ios_new</button>
                     }
-                    <img ref={scope} id="carousel_image_holder" src={context.images[counter]} alt="image carousel"></img>
+                    <img ref={scope} id="carousel_image_holder" src={context.images[counter]} alt="image carousel" onLoad={initial_animate}></img>
                     {context.images.length > 1 &&
                         <button id="carousel_btn_right" className="carousel_btn material-symbols-outlined" onClick={()=>{handle_click("forw")}}>arrow_forward_ios</button>
                     }
@@ -121,4 +124,5 @@ Content_Detail.propTypes ={
     link: PropTypes.string,
     
 }
+
 
