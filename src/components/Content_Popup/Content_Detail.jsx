@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useAnimate } from "framer-motion";
 
 //local imports
 import "../../styles/content_detail.css"
@@ -12,6 +12,7 @@ export default function Content_Detail(){
 
     const context = Use_Content_Context();
     const update_content =  Update_Content_Context();
+    const[scope, animate] = useAnimate(); 
 
     
     console.log(" the context: ", context);
@@ -20,13 +21,25 @@ export default function Content_Detail(){
 
     const [counter, set_counter]=useState(0);
 
-    function handle_click(way){
+    async function handle_click(way){
+        await animate(scope.current,{
+            opacity:[1,0]
+        },{
+            duration:0.3
+        })
         if(way === "back"){
             counter === 0 ? set_counter(imgs_length) : set_counter(counter - 1);
         } else if (way === "forw"){
             counter === imgs_length ? set_counter(0) : set_counter(counter + 1);
         };
+        animate(scope.current,{
+            opacity:[0,1]
+        },{
+            duration:0.3
+        })
     }
+
+
 
     
 
@@ -53,11 +66,11 @@ export default function Content_Detail(){
             >
                 <section className="image_carousel"> 
                     {context.images.length > 1 &&
-                        <button className="carousel_btn_left carousel_btn material-symbols-outlined" onClick={()=>{handle_click("back")}}>arrow_back_ios_new</button>
+                        <button id="carousel_btn_left" className="carousel_btn material-symbols-outlined" onClick={()=>{handle_click("back")}}>arrow_back_ios_new</button>
                     }
-                    <img className="carousel_image_holder" src={context.images[counter]} alt="image carousel"></img>
+                    <img ref={scope} id="carousel_image_holder" src={context.images[counter]} alt="image carousel"></img>
                     {context.images.length > 1 &&
-                        <button className="carousel_btn_right carousel_btn material-symbols-outlined" onClick={()=>{handle_click("forw")}}>arrow_forward_ios</button>
+                        <button id="carousel_btn_right" className="carousel_btn material-symbols-outlined" onClick={()=>{handle_click("forw")}}>arrow_forward_ios</button>
                     }
                 </section>
                 {context.web_skills !== undefined  &&
@@ -108,3 +121,4 @@ Content_Detail.propTypes ={
     link: PropTypes.string,
     
 }
+
