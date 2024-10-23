@@ -16,7 +16,7 @@ function Header(){
     const [reform_nav, set_reform_nav] = useState(
         window.matchMedia("(max-width: 450px)").matches
     )
-    const [nav_open, set_nav_open] = useState("false");
+    const [nav_open, set_nav_open] = useState(false);
 
     const active_link = useRef(true)
 
