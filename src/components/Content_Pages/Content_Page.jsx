@@ -1,6 +1,6 @@
 import { motion, useAnimate } from "framer-motion"
 import PropTypes from "prop-types";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef} from "react";
 
 
 import {  Update_Content_Context } from "../Content_Popup/Content_Context";
@@ -55,6 +55,8 @@ export default function Content_Page(props){
     const [image_counter, set_image_counter] = useState(0);
 
 
+    console.log('%cview_counter', 'background-color:purple',view_counter);
+
     async function view_slide_show(){
 
             view_counter === projects_length ? view_counter_ref.current = 0 : view_counter_ref.current = view_counter + 1;
@@ -67,11 +69,12 @@ export default function Content_Page(props){
                 rand_image = 0;
             }
 
-            scope.current && await animate(scope.current, {
+            scope.current && await animate(scope.current,{
                 opacity:[0,1]
             }, {
-                duration:1, delay: 0.2
+                duration:1, delay:0.17
             });
+
 
             scope.current && await animate(scope.current,{
                 opacity:[1,0]
@@ -83,11 +86,7 @@ export default function Content_Page(props){
             set_image_counter(rand_image);
     }
 
-    useEffect(()=>{
-            view_slide_show()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[view_counter])
-    
+
 
     function toggle_show_cert(new_cert){
         set_cert(new_cert)
@@ -102,6 +101,7 @@ export default function Content_Page(props){
         }
     }
 
+    
     return(
         <>
             <motion.h1
@@ -121,6 +121,7 @@ export default function Content_Page(props){
                         src={props.content[view_counter].images[image_counter]} 
                         alt="image slide show"
                         onClick= {()=>{toggle_view(view_counter)}}
+                        onLoad={view_slide_show}
                     />
                 </section>
                 <section className="content_cards">
