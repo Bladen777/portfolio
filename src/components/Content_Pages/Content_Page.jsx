@@ -70,7 +70,7 @@ export default function Content_Page(props){
             scope.current && await animate(scope.current, {
                 opacity:[0,1]
             }, {
-                duration:1, delay: 0.17
+                duration:1, delay: 0.2
             });
 
             scope.current && await animate(scope.current,{
@@ -195,7 +195,3 @@ Content_Page.propTypes ={
     history: PropTypes.object.isRequired
 
 }
-
-/*
-
-*/
