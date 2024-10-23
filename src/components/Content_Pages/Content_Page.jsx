@@ -55,8 +55,6 @@ export default function Content_Page(props){
     const [image_counter, set_image_counter] = useState(0);
 
 
-    console.log('%cview_counter', 'background-color:purple',view_counter);
-
     async function view_slide_show(){
 
             view_counter === projects_length ? view_counter_ref.current = 0 : view_counter_ref.current = view_counter + 1;
