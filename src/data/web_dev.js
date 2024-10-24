@@ -1,4 +1,4 @@
-//certifaction images
+//certification images
 import udemy from "../assets/certifications/udemy.jpg"
 import mhc from "../assets/certifications/mhc.jpg"
 
@@ -9,6 +9,7 @@ import js_img from "../assets/logos_icons/web_skills/javascript_1.svg";
 import react_img from "../assets/logos_icons/web_skills/react.svg";
 import npm_img from "../assets/logos_icons/web_skills/npm.svg";
 import node_img from "../assets/logos_icons/web_skills/nodejs.svg";
+import express_img from "../assets/logos_icons/web_skills/express.svg"
 import postgre_img from "../assets/logos_icons/web_skills/postgresql.svg";
 import internet_computer_img from "../assets/logos_icons/web_skills/internet_computer.svg";
 
@@ -16,7 +17,7 @@ export const web_dev_history ={
     history:` 
            My journey into web development started while I was attending Medicine Hat College for the Art & Design Program.
             After taking a Web Design class I became interested in how things were working behind the designs, and began down the road of web development.
-            I have since expanded my skills in development, learning JavaScript, NodeJS, NPM, PostGreSQL as well as working with Web3 through the Internet Computer.
+            I have since expanded my skills in development, learning JavaScript, Node.js, NPM, PostGreSQL as well as working with Web3 through the Internet Computer.
 
          
 
@@ -58,12 +59,16 @@ export const web_dev_history ={
             icon:react_img
         },
         {
-            name: "NodeJS",
+            name: "Node.js",
             icon:node_img
         },
         {
             name: "NPM",
             icon:npm_img
+        },
+        {
+            name: "Express.js",
+            icon:express_img
         },
         {
             name: "PostGreSQL",
@@ -133,7 +138,7 @@ export const web_dev_content = [
                 icon:react_img
             },
             {
-                name: "NodeJS",
+                name: "Node.js",
                 icon:node_img
             },
             {
@@ -174,12 +179,16 @@ export const web_dev_content = [
                 icon:js_img
             },
             {
-                name: "NodeJS",
+                name: "Node.js",
                 icon:node_img
             },
             {
                 name: "NPM",
                 icon:npm_img
+            },
+            {
+                name: "Express.js",
+                icon:express_img
             },
             {
                 name: "PostGreSQL",
@@ -241,12 +250,16 @@ export const web_dev_content = [
                 icon:js_img
             },
             {
-                name: "NodeJS",
+                name: "Node.js",
                 icon:node_img
             },
             {
                 name: "NPM",
                 icon:npm_img
+            },
+            {
+                name: "Express.js",
+                icon:express_img
             },    
         ],
         description:`
@@ -277,7 +290,7 @@ export const web_dev_content = [
                 icon:react_img
             },
             {
-                name: "NodeJS",
+                name: "Node.js",
                 icon:node_img
             },
             {
