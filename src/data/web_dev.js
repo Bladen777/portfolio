@@ -9,7 +9,8 @@ import js_img from "../assets/logos_icons/web_skills/javascript_1.svg";
 import react_img from "../assets/logos_icons/web_skills/react.svg";
 import npm_img from "../assets/logos_icons/web_skills/npm.svg";
 import node_img from "../assets/logos_icons/web_skills/nodejs.svg";
-import express_img from "../assets/logos_icons/web_skills/express.svg"
+import express_img from "../assets/logos_icons/web_skills/express.svg";
+import git_img from "../assets/logos_icons/web_skills/git.svg"
 import postgre_img from "../assets/logos_icons/web_skills/postgresql.svg";
 import internet_computer_img from "../assets/logos_icons/web_skills/internet_computer.svg";
 
@@ -69,6 +70,10 @@ export const web_dev_history ={
         {
             name: "Express.js",
             icon:express_img
+        },
+        {
+            name: "Git",
+            icon:git_img
         },
         {
             name: "PostGreSQL",
@@ -342,6 +347,8 @@ export const web_dev_content = [
 
 
 ];
+
+
 
 
 
