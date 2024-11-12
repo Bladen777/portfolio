@@ -1,0 +1,170 @@
+.content_page{
+    padding: 2rem;
+    min-height: calc(100% - 4rem);
+    width: calc(100% - 4rem);
+    position:relative;
+}
+
+.content_page > *{
+    margin: 2rem 0
+}
+
+.content_page h1{
+    margin: auto;
+}
+
+/* VIEW DECK */
+
+
+.view_deck_main{
+    max-height: 40rem;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+
+.view_deck_image{
+    min-width: 0;
+    margin: auto;
+    max-height: 100%;
+    cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+    .view_deck_main{
+        height: 30vh;
+    }
+ 
+}
+
+/* CONTENT CARDS */
+
+.content_cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_card{
+    height: 100%;
+    width: 4rem;
+    margin: 1rem;
+    transition: 1s ease;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.image_card_active{
+    transform: scale(1.3);
+    opacity: 100%;
+}
+
+
+/* WEB SKILLS SECTION */
+
+.web_skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.web_dev_icons{
+    color: var(--secondary);
+}
+
+.web_skill_figure{
+    height:4rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.web_skill_figure svg{
+
+    height: 4rem;
+    width: 4rem;
+}
+
+.web_skill_figure svg image{
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    margin: auto;
+}
+
+.web_skill_figure p{
+    margin: 0;
+}
+
+@media  screen and (max-width: 600px) {
+    .web_skill_figure{
+        scale:0.75;
+        margin: 1rem;
+    }
+}
+
+@media  screen and (max-width: 400px) {
+    .web_skill_figure{
+        scale:0.5;
+        margin: 0;
+    }
+}
+
+
+
+
+/* SKILL INFO SECTION */
+
+.skill_info{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+}
+
+.skill_info .skill_history , .skill_info .skill_education{
+    margin: 0 2rem;
+}
+
+
+.skill_education{
+    width: 50%;
+
+}
+
+.skill_education button{
+    text-align: start;
+}
+
+
+@media  screen and (max-width: 600px) {
+    .skill_info{
+        flex-direction: column;
+    }
+    
+}
+
+
+/* SHOW CERT */
+
+.show_cert{
+    margin: 0 auto;
+    height: 100%;
+    max-height: 600px;
+    max-width: 40rem;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.show_cert img{
+    width: 100%;
+    min-width: 0;
+    color: var(--third);
+}
+
+.hide_cert{
+    max-height: 0px;
+}
+
+
+
