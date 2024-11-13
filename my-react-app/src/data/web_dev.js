@@ -1,6 +1,7 @@
 //certification images
 import udemy from "../assets/certifications/udemy.jpg"
 import mhc from "../assets/certifications/mhc.jpg"
+import typescript_cert from "../assets/certifications/typescipt_cert.jpg"
 
 //web_dev skills icons
 import html_img from "../assets/logos_icons/web_skills/html5.svg";
@@ -29,14 +30,17 @@ export const web_dev_history ={
         {
             id:1,
             institute: "Udemy",
-            course: "The Complete 2024 Web Development Bootcamp",
             cert: udemy
         },
         {
             id:2,
             institute: "Medicine Hat College",
-            course: "Applied Bachelor's of Art & Design",
             cert: mhc
+        },
+        {
+            id:3,
+            institute: "Microsoft Learn: TypeScript",
+            cert: typescript_cert
         },
        
 
