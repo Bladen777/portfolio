@@ -5,7 +5,8 @@ import mhc from "../assets/certifications/mhc.jpg"
 //web_dev skills icons
 import html_img from "../assets/logos_icons/web_skills/html5.svg";
 import css_img from "../assets/logos_icons/web_skills/css3.svg";
-import js_img from "../assets/logos_icons/web_skills/javascript_1.svg";
+import js_img from "../assets/logos_icons/web_skills/javascript.svg";
+import ts_img from "../assets/logos_icons/web_skills/typescript.svg";
 import react_img from "../assets/logos_icons/web_skills/react.svg";
 import npm_img from "../assets/logos_icons/web_skills/npm.svg";
 import node_img from "../assets/logos_icons/web_skills/nodejs.svg";
@@ -54,6 +55,10 @@ export const web_dev_history ={
         {
             name: "JavaScript",
             icon:js_img
+        },
+        {
+            name: "TypeScript",
+            icon:ts_img
         },
         {
             name: "React",
