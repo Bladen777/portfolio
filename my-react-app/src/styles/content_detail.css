@@ -56,6 +56,10 @@
     flex-direction: column;
 }
 
+.details p {
+    white-space: pre-wrap;
+}
+
 .content_exit_btn{
     display: block;
     margin: 0 auto;

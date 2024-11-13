@@ -67,7 +67,9 @@ export const sculpture_content = [
         size:"2’x2’x2’",
         material:"Acrylic painted ceramic",    
         description: `
-            The first walking Castle I have created. This one is also the largest. The idea takes inspiration from the film “howl’s moving castle”. I chose to go with more of a life-like structure, giving the base a mouth with rows of teeth. The whole piece was one of experimentation as this was my first-time using clay as a medium. The best discovery was how freeing the medium was, this allowed me to create anything that came to mind. Another benefit of the medium I discovered was how you could mimic the texture of any other material by just pressing it against it. This project was displayed at the 2019 “Best of Last” show in the One on One Gallery.
+The first walking Castle I have created. This one is also the largest. The idea takes inspiration from the film “howl’s moving castle”. I chose to go with more of a life-like structure, giving the base a mouth with rows of teeth. The whole piece was one of experimentation as this was my first-time using clay as a medium. The best discovery was how freeing the medium was, this allowed me to create anything that came to mind. Another benefit of the medium I discovered was how you could mimic the texture of any other material by just pressing it against it. 
+
+This project was displayed at the 2019 “Best of Last” show in the One on One Gallery.
             `,
         link:""
 
@@ -80,7 +82,9 @@ export const sculpture_content = [
         size:"6”X6”X5’6",
         material:"Ceramic Slip Cast ",      
         description:`
-            It was on this project where I learned about slip casting and decided to use the technique to great proportions. The project involved using objects and then creating molds of them. I used the bases of various objects I found at a thrift store and then used clay to build up and add certain features. The legs were completely sculpted with eight different types. All the segments and legs were casted separately, fired, and then assembled with epoxy. This piece was displayed at the 2019 VASS Halloween show at the One on One Gallery.
+It was on this project where I learned about slip casting and decided to use the technique to great proportions. The project involved using objects and then creating molds of them. I used the bases of various objects I found at a thrift store and then used clay to build up and add certain features. The legs were completely sculpted with eight different types. All the segments and legs were casted separately, fired, and then assembled with epoxy.
+
+This piece was displayed at the 2019 VASS Halloween show at the One on One Gallery.
         `,
         link:""
 
@@ -93,7 +97,7 @@ export const sculpture_content = [
         size:"2’x2’x2’",
         material:"Cardboard and hot glue",    
         description:`
-            Continuing with the idea of walking castles, this design explored a different medium, cardboard. With this medium I had to completely design the structure with that medium in mind. This meant largely abstaining from curves in the design. I also chose to use the unique green colour of some of the cardboard to add accents to the structure. 
+Continuing with the idea of walking castles, this design explored a different medium, cardboard. With this medium I had to completely design the structure with that medium in mind. This meant largely abstaining from curves in the design. I also chose to use the unique green colour of some of the cardboard to add accents to the structure. 
         `,
         link:""
 
@@ -106,7 +110,9 @@ export const sculpture_content = [
         size:"1’x1’x4”",
         material:"Plastic cast",     
         description:`
-            This project’s design was in consideration for a up and coming Halloween Show at the One on One Gallery. As I am a person who enjoys the mechanical aesthetic, I had to incorporate this into my design. The main idea was the horror of going to sleep and then waking up having to breath through tubes and having your eyesight majorly hindered for the rest of your life. This piece was displayed at the 2019 VASS Halloween show at the One on One Gallery
+This project’s design was in consideration for a up and coming Halloween Show at the One on One Gallery. As I am a person who enjoys the mechanical aesthetic, I had to incorporate this into my design. The main idea was the horror of going to sleep and then waking up having to breath through tubes and having your eyesight majorly hindered for the rest of your life. 
+
+This piece was displayed at the 2019 VASS Halloween show at the One on One Gallery
         `,
         link:""
 
@@ -119,10 +125,7 @@ export const sculpture_content = [
         size:"1’x1’x1'",
         material:"Acrylic Painted Ceramic",
         description:`
-            This was my final sculpture while at Medicine Hat College, which was during the lockdown of COVID-19.
-            This presented many challenges, the first of which was not having access to the studio at college which meant I had to build this in the basement of my dorm.
-            The Idea was to create two pieces, the Crab (which is what the photos are of) and a removable shell that sat over top of the back and had view holes into the village inside.
-            The project encorperates the theme of Machines being symbiotic with Nature instead of destroying it.
+This was my final sculpture while at Medicine Hat College, which was during the lockdown of COVID-19. This presented many challenges, the first of which was not having access to the studio at college which meant I had to build this in the basement of my dorm. The Idea was to create two pieces, the Crab (which is what the photos are of) and a removable shell that sat over top of the back and had view holes into the village inside. The project encorperates the theme of Machines being symbiotic with Nature instead of destroying it.
         `,
         link:""
 

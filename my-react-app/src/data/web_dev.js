@@ -167,8 +167,7 @@ export const web_dev_content = [
         ], 
         date:"2024",   
         description:`
-            This was the final project done through my Udemy Web Development course, build a functioning NFT market.
-            The website is capable of minting, purchasing, or even selling NFTs on it's own market, with all purchases running though a previously created token website.
+This was the final project done through my Udemy Web Development course, build a functioning NFT market. The website is capable of minting, purchasing, or even selling NFTs on it's own market, with all purchases running though a previously created token website.
 
         
         `,
@@ -212,10 +211,9 @@ export const web_dev_content = [
         ],
         date:"2024",  
         description:`
-            This website was completed just before I began to learn about React and I really wanted to push myself and see what I could achieve with the skills I had.
-            It incorperated a PostGreSQL database to log any books added, as well as a build in book search utilizing API's from Open Library.
-            Users can look up books, and add them to their own collection sorting them based on completion level.
-            They can also add reviews as well as ratings for each book. 
+This website was completed just before I began to learn about React and I really wanted to push myself and see what I could achieve with the skills I had. It incorperated a PostGreSQL database to log any books added, as well as a build in book search utilizing API's from Open Library. Users can look up books, and add them to their own collection sorting them based on completion level. They can also add reviews as well as ratings for each book. 
+
+*** This website is hosted using a free service with Render, as such initial loading will be slow (around 1 minute at most) and the database will be reset every month. ***
         `,
         link:"https://braden-book-notes.onrender.com/",
 
@@ -240,7 +238,7 @@ export const web_dev_content = [
             },    
         ],
         description:`
-            For my final year of the Art & Design Program at Medicine Hat College a website was a crucial part of making any kind of show happen, due to the circumstances of the Covid-19 pandemic. I and one other student were tasked with building this website. The design was a group effort, but the task of coding the website was my main task as an individual. I saw this as a great opportunity to learn more about HTML and CSS coding and led me to learn a little bit about java script. The Matterport environment was done by an outside source, but I did the coding to embed it into the site.
+For my final year of the Art & Design Program at Medicine Hat College a website was a crucial part of making any kind of show happen, due to the circumstances of the Covid-19 pandemic. I and one other student were tasked with building this website. The design was a group effort, but the task of coding the website was my main task as an individual. I saw this as a great opportunity to learn more about HTML and CSS coding and led me to learn a little bit about java script. The Matterport environment was done by an outside source, but I did the coding to embed it into the site.
         `,
         link:"https://bladen777.github.io/freeform/",
 
@@ -277,7 +275,7 @@ export const web_dev_content = [
             },    
         ],
         description:`
-            For my final year of the Art & Design Program at Medicine Hat College a website was a crucial part of making any kind of show happen, due to the circumstances of the Covid-19 pandemic. I and one other student were tasked with building this website. The design was a group effort, but the task of coding the website was my main task as an individual. I saw this as a great opportunity to learn more about HTML and CSS coding and led me to learn a little bit about java script. The Matterport environment was done by an outside source, but I did the coding to embed it into the site.
+This project was where I was introduced to APIs and specifically utilizing them through the use of Axios. The website was build to fetch a new random drink along with it's corresponding recipe each "Grab a new Drink" was clicked.
         `,
         link:"",
 
@@ -319,10 +317,7 @@ export const web_dev_content = [
         ], 
         date:"2024",   
         description:`
-            This website introduced me to the complexities in dealing with crypto currencies, as well as the ledger style information tracking that is utilized through blockchain.
-            It features Authentication thorough Internet Computer to properly track ones account and funds, and was build as the currency backbone for a later website.
-
-        
+This website introduced me to the complexities in dealing with crypto currencies, as well as the ledger style information tracking that is utilized through blockchain. It features Authentication thorough Internet Computer to properly track ones account and funds, and was build as the currency backbone for a later website. 
         `,
         link: "",
 
@@ -347,8 +342,7 @@ export const web_dev_content = [
             },    
         ],
         description:`
-            While in the process of finishing my final semester at Medicine Hat College I needed a way to showcase my works, what better way than to use my web design & development skills.
-            This was my last project in web design before I decided to persue Web development in a more full form, and now I am able to achieve much better results as well as incorperating backends.
+While in the process of finishing my final semester at Medicine Hat College I needed a way to showcase my works, what better way than to use my web design & development skills. This was my last project in web design before I decided to persue Web development in a more full form, and now I am able to achieve much better results as well as incorperating backends.
         `,
         link:"https://bladen777.github.io/portflio_mk1/",
 
