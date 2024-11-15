@@ -105,7 +105,13 @@ import p1_img_3 from "../assets/project_images/web_development/opend/img_3.png";
 import p1_img_4 from "../assets/project_images/web_development/opend/img_4.png";
 
 //project 2
-import p2_img_1 from "../assets/project_images/web_development/book_notes/book_notes_cover.jpg";
+import p2_img_1 from "../assets/project_images/web_development/book_notes/img_1.jpg";
+import p2_img_2 from "../assets/project_images/web_development/book_notes/img_2.jpg";
+import p2_img_3 from "../assets/project_images/web_development/book_notes/img_3.jpg";
+import p2_img_4 from "../assets/project_images/web_development/book_notes/img_4.jpg";
+import p2_img_5 from "../assets/project_images/web_development/book_notes/img_5.jpg";
+
+
 
 //project 3
 import p3_img_1 from "../assets/project_images/web_development/freeform/img1.jpg";
@@ -177,7 +183,7 @@ This was the final project done through my Udemy Web Development course, build a
     {
         id: 2,
         title:"Book Notes", 
-        images:[p2_img_1, ],
+        images:[p2_img_1, p2_img_2, p2_img_3, p2_img_4, p2_img_5 ],
         web_skills:[
             {
                 name: "HTML5",
