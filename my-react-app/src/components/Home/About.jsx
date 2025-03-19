@@ -74,7 +74,7 @@ function About(){
                 </section>  
                 
           
-                <h2 id="about_title">Oh Hello There</h2>
+                <h2 id="about_title">Oh, Hello There</h2>
                 <p id="about_text">
                 I&#39;m Braden Kowalchuk, a Certified Full Stack Web Developer. 
                 My interest in web development began at Medicine Hat College while studying Art & Design. 
